@@ -1,0 +1,6 @@
+framework module MgwSDK {
+  umbrella header "MgwSDK.h"
+
+  export *
+  module * { export * }
+}
