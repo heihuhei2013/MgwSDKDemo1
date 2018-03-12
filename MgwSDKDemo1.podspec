@@ -13,21 +13,24 @@ Pod::Spec.new do |s|
   s.version      = "1.1"
   s.summary      = "iOS芒果玩客户端framework"
 
-  s.homepage = "http://www.xingfeiinc.com"
+  s.homepage     = "http://www.xingfeiinc.com"
 
   s.license      = { :type => 'MIT' }
 
-  s.authors             = { "duanzongwang" => "duanzongwang@xingfeiinc.com" }
+  s.authors      = { "duanzongwang" => "duanzongwang@xingfeiinc.com" }
 
   s.platform     = :ios
 
-  s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :commit => "e29f99ce7a924d9ff947dc4ba4ad47d9c07ad9c6" ,:tag => "#{s.version}"}
+  s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :tag => "#{s.version}"}
 
-  s.source_files  = "MgwSDK.framework/Headers/*.{h}","Bugly.framework/Headers/*.{h}","ReYunSDK/*.{h}"
+  s.source_files        = "MgwSDK.framework/Headers/*.{h}","Bugly.framework/Headers/*.{h}","ReYunSDK/*.{h}"
 
   s.vendored_frameworks = "MgwSDK.framework", "Bugly.framework"
   
-  s.frameworks =  "MgwSDK","StoreKit","CoreMotion","AdSupport","Photos","SystemConfiguration","Security","CoreGraphics","CoreTelephony","QuartzCore","UIKit"
+  s.frameworks          =  "MgwSDK","StoreKit","CoreMotion","AdSupport","Photos","SystemConfiguration","Security","CoreGraphics","CoreTelephony","QuartzCore","UIKit"
+
+   #依赖库
+  s.libraries           = 'sqlite3'
 
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
