@@ -23,15 +23,17 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :tag => "#{s.version}"}
 
-  s.source_files        = "MgwSDK.framework/Headers/*.{h}","Bugly.framework/Headers/*.{h}","ReYunSDK/*.{h}"
+  s.source_files        = "ReYunSDK/*.{h}"
 
   s.vendored_frameworks = "MgwSDK.framework", "Bugly.framework"
+
+  s.vendored_libraries =  "ReYunSDK/TrackingIO.a"
   
   s.frameworks          =  "MgwSDK","StoreKit","CoreMotion","AdSupport","Photos","SystemConfiguration","Security","CoreGraphics","CoreTelephony","QuartzCore","UIKit"
 
    #依赖库
   s.libraries           = 'sqlite3'
 
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
 end
