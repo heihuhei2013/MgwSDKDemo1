@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :tag => "#{s.version}" }
 
-  s.source_files  = "MgwSDK.framework/Headers/*.{h}","Bugly.framework/Headers/*.{h}"
+  s.source_files  = "MgwSDK.framework/Headers/*.{h}","Bugly.framework/Headers/*.{h}","ReYunSDK/*.{h}"
 
   s.vendored_frameworks = "MgwSDK.framework", "Bugly.framework"
   
