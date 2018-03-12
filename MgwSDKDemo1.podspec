@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "MgwSDKDemo1"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "iOS芒果玩客户端framework"
 
   s.homepage = "http://www.xingfeiinc.com"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :commit => "e29f99ce7a924d9ff947dc4ba4ad47d9c07ad9c6" ,:tag => "{s.version}"}
 
   s.source_files  = "MgwSDK.framework/Headers/*.{h}","Bugly.framework/Headers/*.{h}","ReYunSDK/*.{h}"
 
