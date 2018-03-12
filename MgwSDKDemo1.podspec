@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "MgwSDKDemo1"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "iOS芒果玩客户端framework"
 
   s.homepage     = "http://www.xingfeiinc.com"
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "MgwSDK.framework", "Bugly.framework"
 
-  s.vendored_libraries =  "ReYunSDK/TrackingIO.a"
+  s.vendored_libraries =  "ReYunSDK/libTrackingIO.a"
   
   s.frameworks          =  "MgwSDK","StoreKit","CoreMotion","AdSupport","Photos","SystemConfiguration","Security","CoreGraphics","CoreTelephony","QuartzCore","UIKit"
 
