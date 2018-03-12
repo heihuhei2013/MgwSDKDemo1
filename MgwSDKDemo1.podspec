@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description  = <<-DESC 
-                 芒果玩接入SDK
+                 芒果玩接入SDK,用于cp快速接入SDK，使用Cocoapods
                  DESC
 
   s.homepage = "http://www.xingfeiinc.com"
