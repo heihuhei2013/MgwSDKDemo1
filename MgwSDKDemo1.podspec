@@ -13,21 +13,19 @@ Pod::Spec.new do |s|
   s.version      = "1.0"
   s.summary      = "iOS芒果玩客户端framework"
 
-  s.description  = <<-DESC 
-                 芒果玩接入SDK,用于cp快速接入SDK，使用Cocoapods
-                 DESC
-
   s.homepage = "http://www.xingfeiinc.com"
 
-  s.license      = "MIT"
+  s.license      = { :type => 'MIT' }
 
-  s.author             = { "duanzongwang" => "duanzongwang@xingfeiinc.com" }
+  s.authors             = { "duanzongwang" => "duanzongwang@xingfeiinc.com" }
 
   s.platform     = :ios
 
   s.source       = { :git => "https://github.com/heihuhei2013/MgwSDKDemo1.git", :tag => "#{s.version}" }
 
-  s.source_files  = "**/*.{h,m}"
+  s.source_files  = "MgwSDK.framework/Headers/*.{h}"
+
+  s.vendored_frameworks = 'MgwSDK.framework'
   
   s.frameworks =  "MgwSDK","StoreKit","CoreMotion","AdSupport","Photos","SystemConfiguration","Security","CoreGraphics","CoreTelephony","QuartzCore","UIKit"
 
